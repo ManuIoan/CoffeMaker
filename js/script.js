@@ -10,15 +10,16 @@ let cart = document.querySelector('.cart')
 
 const Go =() =>{
     var checkboxes = document.getElementsByName('check');
-    let ok=0;
+    let ok=0, val;
     checkboxes.forEach((item) => {
         
         if(item.checked === true)
         {
-          console.log(item.value);
+         //console.log(item.value);
+          val = item.value;
           ok=1;
         }   
-        console.log(ok);
+        
        
         
 
@@ -26,10 +27,11 @@ const Go =() =>{
     })
     if(ok===0)
     {
-        alert("You did not checked something!")
+        alert("You did not check something!")
     }
     else{
-        
+       console.log(val);
+       window.location.replace("/components/list.html")
     }
    
 
