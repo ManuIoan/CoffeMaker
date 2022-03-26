@@ -78,4 +78,32 @@ input {
     cursor: pointer;
 
 }
+.zahar{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.zahar img{
+    width:50px;
+    height:50px;
+}
+.ps{
+    display: flex;
+}
+.much{
+    margin-left: 10px;
+}
+.ps p{
+    margin-right: 20px;
+}
+.adg .patrat{
+width: 20px;
+height: 25px;
+background-color: rgb(194, 154, 103);
+margin-left: 10px;
+}
+.adg {
+display: flex;
+}
 

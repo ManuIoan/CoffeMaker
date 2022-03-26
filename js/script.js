@@ -1,3 +1,8 @@
+// form.onsubmit = (e) =>{
+//     e.preventDefault(); // preventing form from submiting
+// }
+
+
 function onlyOne(checkbox) {
     var checkboxes = document.getElementsByName('check')
     checkboxes.forEach((item) => {
@@ -34,5 +39,18 @@ const Go =() =>{
        window.location.replace("/components/list.html")
     }
    
+
+}
+let x=1;
+let adg = document.querySelector('.adg');
+const plus = ()=>{
+    x++;
+    let qs = ''
+    for(let i =0;i<x;i++)
+         qs += '<div class="patrat"></div>';
+    adg.innerHTML = qs;     
+    
+
+
 
 }
