@@ -5,10 +5,19 @@
 
 function onlyOne(checkbox) {
     var checkboxes = document.getElementsByName('check')
-    checkboxes.forEach((item) => {
-        if (item !== checkbox) item.checked = false
-    })
     
+    checkboxes.forEach((item) => {
+        if (item !== checkbox) 
+        {
+            item.checked = false
+            
+            
+        }
+    })
+    let cb = checkbox.value
+    let sugar = document.querySelector(`.${cb}`)
+    sugar.innerHTML = '<img src="../images/sugar.png" alt=""><div class="much"><p>How much sugar do you want?</p><div class="ps"><button type="button" onclick="plus()">+</button><div class="adg"><div class="patrat"></div></div></div></div>'
+
 }
 
 let cart = document.querySelector('.cart')
@@ -44,6 +53,7 @@ const Go =() =>{
 let x=1;
 let adg = document.querySelector('.adg');
 const plus = ()=>{
+    if(x<3)
     x++;
     let qs = ''
     for(let i =0;i<x;i++)
