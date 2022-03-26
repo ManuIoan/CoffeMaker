@@ -1,7 +1,6 @@
 CREATE TABLE pers(
 id INT PRIMARY KEY AUTO_INCREMENT,
-descr TEXT,
-tip VARCHAR(20),
+nume VARCHAR(20),
 id_c INT,
 FOREIGN KEY(id_c) REFERENCES cm(id_c)
 );
