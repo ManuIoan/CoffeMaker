@@ -78,13 +78,14 @@ input {
     cursor: pointer;
 
 }
-.zahar{
+.d{
     margin-top: 15px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.zahar img{
+.d img{
     width:50px;
     height:50px;
 }
@@ -93,6 +94,7 @@ input {
 }
 .much{
     margin-left: 10px;
+    width:270px;
 }
 .ps p{
     margin-right: 20px;
@@ -102,8 +104,21 @@ width: 20px;
 height: 25px;
 background-color: rgb(194, 154, 103);
 margin-left: 10px;
+margin-right: 10px;
+}
+.adgm .patrat{
+    width: 20px;
+    height: 25px;
+    background-color: rgb(194, 154, 103);
+    margin-left: 10px;
+    }
+.adgm{
+    display: flex;
 }
 .adg {
 display: flex;
 }
-
+.pot{
+    width:320px;
+    display: flex;
+}
