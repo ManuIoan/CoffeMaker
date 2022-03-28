@@ -4,3 +4,18 @@ nume VARCHAR(20),
 id_c INT,
 FOREIGN KEY(id_c) REFERENCES cm(id_c)
 );
+
+
+CREATE TABLE persoane(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    nume varchar(20));
+    }
+
+CREATE TABLE comanda(
+id_c INT PRIMARY KEY AUTO_INCREMENT,
+data1 DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+sugar INT,
+milk INT,
+id INT,
+FOREIGN KEY(id) REFERENCES persoane(id)
+);

@@ -2,7 +2,7 @@
 //     e.preventDefault(); // preventing form from submiting
 // }
 
-let x=1;
+let x, y, cb;
 function onlyOne(checkbox) {
     var checkboxes = document.getElementsByName('check')
     
@@ -14,7 +14,7 @@ function onlyOne(checkbox) {
             
         }
     })
-    let cb = checkbox.value
+     cb = checkbox.value
     let sugar = document.querySelector(`.${cb}`)
     sugar.innerHTML = '<div class="pot" style="margin-bottom:10px;" ><img src="../images/sugar.png" alt=""><div class="much"><p>How much sugar do you want?</p><div class="ps"><button type="button" onclick="plus()">+</button><div class="adg"><div class="patrat"></div></div><button type="button" onclick="minus()">-</button></div></div> </div><div class="pot" ><img src="../images/milk.png" alt=""><div class="much"><p>How much milk do you want?</p><div class="ps"><button type="button" onclick="plusM()">+</button><div class="adgm"><div class="patrat"></div></div><button type="button" onclick="minusM()">-</button></div></div> </div>'
     
@@ -53,14 +53,43 @@ const Go =() =>{
         alert("You did not check something!")
     }
     else{
-       console.log(val);
-       window.location.replace("/components/list.html")
+       
+       let xhr = new XMLHttpRequest();
+       //creating XML object
+       xhr.open("POST", "errcheck.php", true);
+       xhr.onload = ()=>{
+          if(xhr.readyState === XMLHttpRequest.DONE)
+          {
+              if(xhr.status === 200){
+                  
+                  let data = xhr.response;
+                  if(data=="succes")
+                  {   
+                    window.location.replace("list.php");
+                }
+                  
+                  
+                  
+                  
+              }
+          }
+       }
+   
+   
+       xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+       xhr.send("x="+x+"&"+"y="+y+"cb="+cb);
+
+
+
+
+
+       
     }
    
 
 }
  
-let y=1;
+
 
 const plus = ()=>{
     if(x<3)
