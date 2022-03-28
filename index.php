@@ -1,7 +1,7 @@
 <?php
 session_start();
 if(isset($_SESSION["unique_id"]))
-header("Location: components/index.html");
+header("Location: components/choose.php");
 include_once "components/conn/connect.php"
 ?>
 <!DOCTYPE html>

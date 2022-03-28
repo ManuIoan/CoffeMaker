@@ -2,7 +2,7 @@
 //     e.preventDefault(); // preventing form from submiting
 // }
 
-let x;
+let x=1;
 function onlyOne(checkbox) {
     var checkboxes = document.getElementsByName('check')
     
@@ -16,14 +16,15 @@ function onlyOne(checkbox) {
     })
     let cb = checkbox.value
     let sugar = document.querySelector(`.${cb}`)
-    sugar.innerHTML = '<div class="pot" style="margin-bottom:10px;"><img src="../images/sugar.png" alt=""><div class="much"><p>How much sugar do you want?</p><div class="ps"><button type="button" onclick="plus()">+</button><div class="adg"><div class="patrat"></div></div></div></div> </div><div class="pot" ><img src="../images/milk.png" alt=""><div class="much"><p>How much milk do you want?</p><div class="ps"><button type="button" onclick="plusM()">+</button><div class="adgm"><div class="patrat"></div></div></div></div> </div>'
+    sugar.innerHTML = '<div class="pot" style="margin-bottom:10px;" ><img src="../images/sugar.png" alt=""><div class="much"><p>How much sugar do you want?</p><div class="ps"><button type="button" onclick="plus()">+</button><div class="adg"><div class="patrat"></div></div><button type="button" onclick="minus()">-</button></div></div> </div><div class="pot" ><img src="../images/milk.png" alt=""><div class="much"><p>How much milk do you want?</p><div class="ps"><button type="button" onclick="plusM()">+</button><div class="adgm"><div class="patrat"></div></div><button type="button" onclick="minusM()">-</button></div></div> </div>'
     
     x=1;
     y=1;
     let sg = document.querySelectorAll('.d');
     
     sg.forEach((item)=>{
-        if(item !=sugar)
+        
+        if(item !=sugar || (item==sugar && checkbox.checked==false ))
         item.innerHTML="";
     })
 }

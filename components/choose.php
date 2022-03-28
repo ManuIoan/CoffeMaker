@@ -20,34 +20,10 @@
             <input type="checkbox" name="check" onclick="onlyOne(this)" value="c1">
             <div class="c1 d">
 
-                <!----> 
-<div class="pot" >
-    <img src="../images/sugar.png" alt="">
-    <div class="much"><p>How much sugar do you want?</p><div class="ps">
-        <button type="button" onclick="plus()">+</button>
-        <div class="adg">
-            <div class="patrat"></div>
-        </div>
-        <button type="button" onclick="minus()">-</button>
-    </div></div> </div>
-<div class="pot" >
-    <img src="../images/milk.png" alt="">
-    <div class="much">
-        <p>How much milk do you want?</p>
-        <div class="ps">
-            <button type="button" onclick="plusM()">
-                +
-            </button>
+                <!--
+<div class="pot" style="margin-bottom:10px;" ><img src="../images/sugar.png" alt=""><div class="much"><p>How much sugar do you want?</p><div class="ps"><button type="button" onclick="plus()">+</button><div class="adg"><div class="patrat"></div></div><button type="button" onclick="minus()">-</button></div></div> </div><div class="pot" ><img src="../images/milk.png" alt=""><div class="much"><p>How much milk do you want?</p><div class="ps"><button type="button" onclick="plusM()">+</button><div class="adgm"><div class="patrat"></div></div><button type="button" onclick="minusM()">-</button></div></div> </div>
 
-            <div class="adgm">
-                <div class="patrat">
-
-                </div>
-            </div>
-            <button type="button" onclick="minusM()">-</button>
-        </div></div> </div>
-
-<!---->
+-->
             </div>
             
         </div>
