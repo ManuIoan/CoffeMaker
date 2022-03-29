@@ -49,19 +49,19 @@ while($row230=mysqli_fetch_assoc($sql))
         $rest = substr($type, -1);
         $rest = intval( $rest );
         echo "<div class='comm'>";
-        echo $co[$rest-1]."    ";
+        echo"<div class='name'>".$co[$rest-1]."</div>";
         $x = $row2['sugar'];
         $y = $row2['milk'];
 
         echo "<div class='su'>";
-        for($i=0;$i<$x;$i++)
+        for($i=0;$i<$x-1;$i++)
         {
             echo "<img src='../images/sugar.png'>";
         }
         echo "</div>";
 
         echo "<div class='ml'>";
-        for($i=0;$i<$y;$i++)
+        for($i=0;$i<$y-1;$i++)
         {
             echo "<img src='../images/milk.png'>";
         }

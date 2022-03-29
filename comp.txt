@@ -13,9 +13,12 @@ CREATE TABLE persoane(
 
 CREATE TABLE comanda(
 id_c INT PRIMARY KEY AUTO_INCREMENT,
-data1 DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+nume VARCHAR(20),
+data1 DATE NOT NULL DEFAULT CURRENT_TIMESTAMP,
 sugar INT,
 milk INT,
-id INT,
-FOREIGN KEY(id) REFERENCES persoane(id)
+cb VARCHAR(50)
 );
+
+
+$conn = mysqli_connect("", "u693714404_Manu", "L7$m#dn?Q?MG", "u693714404_coffe");
