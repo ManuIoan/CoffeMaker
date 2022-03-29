@@ -56,15 +56,16 @@ const Go =() =>{
        
        let xhr = new XMLHttpRequest();
        //creating XML object
-       xhr.open("POST", "errcheck.php", true);
+       xhr.open("POST", "errors/errcheck.php", true);
        xhr.onload = ()=>{
           if(xhr.readyState === XMLHttpRequest.DONE)
-          {
+          { console.log(1);
               if(xhr.status === 200){
                   
                   let data = xhr.response;
+                  console.log(data);
                   if(data=="succes")
-                  {   
+                  {  
                     window.location.replace("list.php");
                 }
                   
@@ -75,9 +76,9 @@ const Go =() =>{
           }
        }
    
-   
+       
        xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-       xhr.send("x="+x+"&"+"y="+y+"cb="+cb);
+       xhr.send("x="+x+"&"+"y="+y+"&"+"cb="+cb);
 
 
 

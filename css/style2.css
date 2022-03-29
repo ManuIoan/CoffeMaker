@@ -1,0 +1,29 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+    }
+.tit
+{
+    font-size: 3rem;
+    background-color: blanchedalmond;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+.prs p{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.prs img{
+    width: 20px;
+    height: 20px;
+}
+.comm{
+    display: flex;
+    
+}
+
