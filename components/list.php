@@ -26,7 +26,8 @@ $sql = mysqli_query($conn, "SELECT DISTINCT nume from comanda WHERE data1='{$dat
 
 if (!$sql)
 printf("Connect failed: %s\n", mysqli_error($conn));
-
+echo "<div class='put'>";
+echo "<div class='cat'>";
 echo "<div class='lema'>{$data2}</div>";
 while($row230=mysqli_fetch_assoc($sql))
     if(!isset($row230['nume']))
@@ -72,12 +73,14 @@ while($row230=mysqli_fetch_assoc($sql))
 
         echo "<br>";
       }
-      echo "</div>";
+      
+      echo "</div></div>";
       
       
       
       
     }
+    echo "</div>"
 
 
 ?>
