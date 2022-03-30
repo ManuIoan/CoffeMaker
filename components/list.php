@@ -74,14 +74,15 @@ while($row230=mysqli_fetch_assoc($sql))
         echo "<br>";
       }
       
-      echo "</div></div>";
       
+      echo "</div>";
+
       
       
       
     }
-    echo "</div>"
-
+    echo "</div></div>";
+    
 
 ?>
 

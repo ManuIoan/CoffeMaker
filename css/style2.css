@@ -26,6 +26,7 @@
 .comm{
     display: flex;
     align-items: center;
+    height: 58px;
     
     
 }
@@ -37,7 +38,7 @@
     padding-left: 20px;
 }
 .name{
-    width: 100px;
+    width: 200px;
 }
 .lema {
     width: 100%;
@@ -49,10 +50,10 @@
 .cat{
     
     width:100%;
-    max-width:500px;
-    min-height: 500px;
+    max-width:600px;
+    min-height: 600px;
     margin-top: 50px;
-    border: 1px solid red;
+   
 }
 .cat {
     
