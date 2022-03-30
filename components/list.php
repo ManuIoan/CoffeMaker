@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>CoffeMaker</title>
     <link rel="stylesheet" href="../css/style2.css" >
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,7 +18,7 @@
 <?php
 session_start();
 include_once "conn/connect.php";
-$co = array("Alintaroma", "Espresso", "Cafeluta");
+$co = array("Latte Coffe", "Long Caffe", "Chocochino");
 
 
 $data2 = date("Y-m-d");
@@ -54,14 +55,14 @@ while($row230=mysqli_fetch_assoc($sql))
         $y = $row2['milk'];
 
         echo "<div class='su'>";
-        for($i=0;$i<$x-1;$i++)
+        for($i=0;$i<$x;$i++)
         {
             echo "<img src='../images/sugar.png'>";
         }
         echo "</div>";
 
         echo "<div class='ml'>";
-        for($i=0;$i<$y-1;$i++)
+        for($i=0;$i<$y;$i++)
         {
             echo "<img src='../images/milk.png'>";
         }

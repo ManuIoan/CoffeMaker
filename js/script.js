@@ -16,10 +16,10 @@ function onlyOne(checkbox) {
     })
      cb = checkbox.value
     let sugar = document.querySelector(`.${cb}`)
-    sugar.innerHTML = '<div class="pot" style="margin-bottom:10px;" ><img src="../images/sugar.png" alt=""><div class="much"><p>How much sugar do you want?</p><div class="ps"><button type="button" onclick="plus()">+</button><div class="adg"><div class="patrat"></div></div><button type="button" onclick="minus()">-</button></div></div> </div><div class="pot" ><img src="../images/milk.png" alt=""><div class="much"><p>How much milk do you want?</p><div class="ps"><button type="button" onclick="plusM()">+</button><div class="adgm"><div class="patrat"></div></div><button type="button" onclick="minusM()">-</button></div></div> </div>'
+    sugar.innerHTML = '<div class="pot" style="margin-bottom:10px;" ><img src="../images/sugar.png" alt=""><div class="much"><p>Do you want more sugar?</p><div class="ps"><button type="button" class="mr" onclick="plus()">+</button><div class="adg"></div><button type="button" class="ml" onclick="minus()">-</button></div></div> </div><div class="pot" ><img src="../images/milk.png" alt=""><div class="much"><p>Do you want more milk?</p><div class="ps"><button type="button" class="mr" onclick="plusM()">+</button><div class="adgm"></div><button type="button" class="ml" onclick="minusM()">-</button></div></div> </div>'
     
-    x=1;
-    y=1;
+    x = 0;
+    y = 0;
     let sg = document.querySelectorAll('.d');
     
     sg.forEach((item)=>{
@@ -108,7 +108,7 @@ const plus = ()=>{
 
 
 const minus = () => {
-    if(x>1)
+    if(x>0)
     x--;
     let qs = ''
     for(let i =0;i<x;i++)
@@ -133,7 +133,7 @@ const plusM = ()=>{
 
 }
 const minusM = ()=>{
-    if(y>1)
+    if(y>0)
     y--;
     let qs = ''
     for(let i =0;i<y;i++)

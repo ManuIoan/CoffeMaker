@@ -13,9 +13,11 @@
 <body>
     <p class="criteria">Pick the one you want</p>
     <main>
-        <form>
+
+        <form method="POST">
+            <div class="fw">
         <div class="container">
-            <div class="descr">Cafelutzaa</div>
+            <div class="descr">Latte Coffe</div>
             <img src="../images/img1.jpg" alt="">
             <input type="checkbox" name="check" onclick="onlyOne(this)" value="c1">
             <div class="c1 d">
@@ -27,9 +29,10 @@
             </div>
             
         </div>
+
         <hr style="margin-top:20px">
         <div class="container">
-            <div class="descr">Cafelutzaa</div>
+            <div class="descr">Long Caffe</div>
             <img src="../images/img2.jpg" alt="">
             <input type="checkbox" name="check" onclick="onlyOne(this)" value="c2">
             <div class="c2 d">
@@ -38,18 +41,19 @@
         </div>
         <hr style="margin-top:20px">
         <div class="container">
-            <div class="descr">Cafelutzaa</div>
+            <div class="descr">Chocochino</div>
             <img src="../images/img3.png" alt="">
             <input type="checkbox" name="check" onclick="onlyOne(this)" value="c3">
             <div class="c3 d">
 
             </div>
         </div>
+        </div>
         <div class="container">
             <input type="button" value="GO" class="subm" onclick="Go()">
         </div>
         
-
+        
         </form>
         <div class="cart"></div>
     </main>
