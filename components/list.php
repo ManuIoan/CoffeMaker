@@ -71,7 +71,7 @@ while($row230=mysqli_fetch_assoc($sql))
         echo "</div>";
 
 
-        echo "<br>";
+      
       }
       
       
