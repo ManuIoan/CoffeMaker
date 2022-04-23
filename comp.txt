@@ -12,7 +12,6 @@ CREATE TABLE persoane(
     }
 
 CREATE TABLE comanda(
-<<<<<<< Updated upstream
 id_c INT PRIMARY KEY AUTO_INCREMENT,
 nume VARCHAR(20),
 data1 DATE NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -23,12 +22,16 @@ cb VARCHAR(50)
 
 
 $conn = mysqli_connect("", "u693714404_Manu", "L7$m#dn?Q?MG", "u693714404_coffe");
-=======
-id INT PRIMARY KEY AUTO_INCREMENT,
-data1 DATE NOT NULL DEFAULT CURRENT_TIMESTAMP,
-sugar INT,
-milk INT,
-cb VARCHAR(30)
 
-);
->>>>>>> Stashed changes
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+
+// Create connection
+
+$conn = mysqli_connect("", "u693714404_Manu", "Y=&cb&75Nf2", "u693714404_coffe");
+// Check connection
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}

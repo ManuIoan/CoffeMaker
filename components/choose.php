@@ -17,8 +17,8 @@
         <form method="POST">
             <div class="fw">
         <div class="container ton">
-            <div class="descr">Latte Coffe</div>
-            <img src="../images/img1.jpg" alt="">
+            <div class="descr">Capuccino</div>
+            <img src="../images/capuccino.png" alt="">
             <input type="checkbox" name="check" onclick="onlyOne(this)" value="c1">
             <div class="c1 d">
 
@@ -32,8 +32,8 @@
 
         <hr style="margin-top:20px">
         <div class="container ton">
-            <div class="descr">Long Caffe</div>
-            <img src="../images/img2.jpg" alt="">
+            <div class="descr">Ristretto Barista</div>
+            <img src="../images/ristretto.png" alt="">
             <input type="checkbox" name="check" onclick="onlyOne(this)" value="c2">
             <div class="c2 d">
 
@@ -41,8 +41,8 @@
         </div>
         <hr style="margin-top:20px">
         <div class="container ton">
-            <div class="descr">Chocochino</div>
-            <img src="../images/img3.png" alt="">
+            <div class="descr">Latte Machiato</div>
+            <img src="../images/latte.png" alt="">
             <input type="checkbox" name="check" onclick="onlyOne(this)" value="c3">
             <div class="c3 d">
 

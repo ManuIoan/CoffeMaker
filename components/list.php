@@ -18,7 +18,7 @@
 <?php
 session_start();
 include_once "conn/connect.php";
-$co = array("Latte Coffe", "Long Caffe", "Chocochino");
+$co = array("Capuccino", "Ristretto", "Latte Machiato");
 
 
 $data2 = date("Y-m-d");
