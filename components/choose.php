@@ -11,7 +11,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap" rel="stylesheet">
 </head>
 <body>
-    <p class="criteria">Pick the one you want</p>
+    <p class="criteria">Alegerea</p>
     <main>
 
         <form method="POST">

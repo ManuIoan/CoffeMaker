@@ -16,7 +16,7 @@ function onlyOne(checkbox) {
     })
      cb = checkbox.value
     let sugar = document.querySelector(`.${cb}`)
-    sugar.innerHTML = '<div class="pot" style="margin-bottom:10px;" ><img src="../images/sugar.png" alt=""><div class="much"><p>Do you want more sugar?</p><div class="ps"><button type="button" class="mr" onclick="plus()">+</button><div class="adg"></div><button type="button" class="ml" onclick="minus()">-</button></div></div> </div><div class="pot" ><img src="../images/milk.png" alt=""><div class="much"><p>Do you want more milk?</p><div class="ps"><button type="button" class="mr" onclick="plusM()">+</button><div class="adgm"></div><button type="button" class="ml" onclick="minusM()">-</button></div></div> </div>'
+    sugar.innerHTML = '<div class="pot" style="margin-bottom:10px;" ><img src="../images/sugar.png" alt=""><div class="much"><p>Vrei zahar in plus?</p><div class="ps"><button type="button" class="mr" onclick="plus()">+</button><div class="adg"></div><button type="button" class="ml" onclick="minus()">-</button></div></div> </div><div class="pot" ><img src="../images/milk.png" alt=""><div class="much"><p>Vrei lapte in plus?</p><div class="ps"><button type="button" class="mr" onclick="plusM()">+</button><div class="adgm"></div><button type="button" class="ml" onclick="minusM()">-</button></div></div> </div>'
     
     x = 0;
     y = 0;

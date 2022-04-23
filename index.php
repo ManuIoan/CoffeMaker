@@ -19,7 +19,7 @@ include_once "components/conn/connect.php"
 <body>
     <div class="main">
         <form action="" class="frm" method="post" enctype="multipart/form-data" >
-           <label class="name">Your name:</label>
+           <label class="name">Numele tau:</label>
            <input type="text" name="txt" id="txt">
            <div class="alert" style="color:red; margin-bottom:15px;">
        
